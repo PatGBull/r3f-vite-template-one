@@ -2,7 +2,7 @@
   "name": "r3f-template",
   "private": true,
   "version": "0.0.0",
-  "module": "main.jsx",
+  "module": "./src/main.jsx",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -17,6 +17,7 @@
     "react-dom": "^18.2.0",
     "three": "^0.162.0",
     "zustand": "^4.4.0",
+    "r3f-perf": "7.1.2",
     "uuid": "^9.0.1"
   },
   "peerDependencies": {
