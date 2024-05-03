@@ -10,10 +10,10 @@ import './scene.css'
 const Scene = () => {
   return (
       <div>
-	  <h1>Welcome to the starter template</h1>
+	  <h1></h1>
 		<div id="canvas-container">
-		    <Canvas>
-			<Perf />
+		    <Canvas  camera={{ position: [0, 0, 4], fov: 45>
+			<Perf position={top-left} />
 			<color args={['hsl(10, 60%, 60%)']} attach="background" />
 			<Environment preset="sunset" />
 			<CameraControls makeDefault />
@@ -27,6 +27,6 @@ const Scene = () => {
 		</div>
 	</div>
 	     )
-	}
+	};
 
 export default Scene
