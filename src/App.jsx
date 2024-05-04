@@ -25,10 +25,21 @@ function Objects() {
 
 const Scene = () => {
   return (
+	   <div ref={ref} className="container">
+      <div className="text">
+        "But afterwards there occurred violent earthquakes and floods; and in a single day and night of rain all your warlike men in a body sank into the earth,
+        and the island of Atlantis in like manner disappeared, and was sunk beneath the sea."
+      </div>
       <div>
-	  <h1>New Entry</h1>
+{/* 	  <h1>New Entry</h1> */}
 		<div id="canvas-container">
-		    <Canvas  camera={{ position: [0, 0, 4], fov: 45>
+		    <Canvas  
+			shadows
+        		frameloop="demand"
+			camera={{ position: [0, 0, 4], fov: 45}}
+			style={{ pointerEvents: 'none' }}
+			eventSource={ref}
+        		eventPrefix="offset">
 			<Perf position={top-left} />
 			<color args={['hsl(10, 60%, 60%)']} attach="background" />
 			<Environment preset="sunset" />
