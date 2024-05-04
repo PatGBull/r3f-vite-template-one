@@ -181,15 +181,15 @@ export default function Underlay() {
     <Grid>
       <Left>
         <div>
-          THE SISTRUM
+          A WORLD
           <br />
-          IS DESIGNED
+         FAR FROM HERE
           <br />
-          TO REPRESENT
+          SHROUDED IN MISTS
           <br />
-          CONTINUAL
+          THAT SECRETS
           <br />
-          AGITATION.
+          CALL HOME.
         </div>
         <Sub />
       </Left>
