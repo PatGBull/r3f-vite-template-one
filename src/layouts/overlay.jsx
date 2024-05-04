@@ -1,4 +1,4 @@
-import { Container, TopLeft, BottomLeft, BottomRight, Hamburger } from './styling'
+import { Container, TopLeft, BottomLeft, BottomRight, Hamburger } from './styles'
 
 export default function Overlay() {
   return (
