@@ -1,29 +1,37 @@
-import { CameraControls, Environment } from '@react-three/drei'
-import {useMemo, useRef, useState } from 'react'
-import { Canvas, useFrame, useThree } from '@react-three/fiber'
-import { Perf } from 'r3f-perf'
 import * as THREE from 'three'
+import { CameraControls, Environment, View } from '@react-three/drei'
+import { useMemo, useRef, useState } from 'react'
+import { Canvas, useFrame, useThree, addEffect } from '@react-three/fiber'
+import { Perf } from 'r3f-perf'
 import {v4 as uuidv4} from 'uuid'
 import {range} from './utils'
+import Lenis from '@studio-freight/lenis'
 import './scene.css'
 
 import { colors } from "./data";
 import { useStore } from "./store";
 
+// Use lenis smooth scroll
+const lenis = new Lenis({ syncTouch: true })
+// Integrate into fibers own raf loop instead of opening another
+addEffect((t) => lenis.raf(t))
+
 function Objects() {
 	
 	const [index, setIndex] = useState(0);
 
-	const play = useStore((s) => s.play);
+	// const play = useStore((s) => s.play);
 
 	 const default = useRef();
 
-  	const {
-    	viewport: { width, height },
-  	} = useThree();
+  	//const { viewport: { width, height }, } = useThree();
+	
 }
 
-const Scene = () => {
+export default function Scene() {
+// const Scene = () => {
+  const ref = useRef()
+	
   return (
 	   <div ref={ref} className="container">
       <div className="text">
