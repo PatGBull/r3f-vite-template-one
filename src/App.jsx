@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import { CameraControls, Environment, View } from '@react-three/drei'
+import { CameraControls, Environment, View, Html } from '@react-three/drei'
 import { useMemo, useRef, useState } from 'react'
 import { Canvas, useFrame, useThree, addEffect } from '@react-three/fiber'
 import { Perf } from 'r3f-perf'
