@@ -38,7 +38,9 @@ const MyScene = forwardRef(({}, ref) => {
             return { mass: 4, friction: 220 }
           default:
             return {}
-        }
+        },
+       precision: 0.0001,
+    },
       },
     }),
     []
